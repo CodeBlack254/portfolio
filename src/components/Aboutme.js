@@ -1,6 +1,6 @@
 import { faAlignCenter } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
-import Profile from '../assets/profile_pic.jpeg'
+import Profile from '../assets/profile_pic_two.jpeg'
 
 const Aboutme = () => {
   return (

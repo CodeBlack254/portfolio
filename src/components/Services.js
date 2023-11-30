@@ -69,7 +69,6 @@ const Services = () => {
                       </div>
                   </div>
               </div> <br></br>
-              <p>end of services</p>
           </div>
       </div> 
   )
