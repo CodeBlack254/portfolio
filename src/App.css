@@ -288,7 +288,7 @@ nav ul li {
 }
 
 .socialmedia:hover{
-  color: var(--primary-orange);
+  background-color: var(--primary-orange);
   cursor: pointer;
 }
 
