@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100&display=swap');
 
+@import 'animate.css';
+
 :root {
   --primary-white: #fff;
   --primary-grey: grey;
   --primary-orange: #f9ab00;
-  --primaty-dark: rgba(255,255,255,0);
+  --primary-dark: #000000;
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+  --secondary-grey:  #e0d3d3;
 }
 
 body {
@@ -12,6 +17,11 @@ body {
 }
 
 /* ########################### NAVBAR ################################## */
+nav{
+  background-color: var(--primary-grey) !important;
+  z-index: 2;
+}
+
 .logo{
   width: 8rem;
   height: 8rem;
@@ -32,7 +42,7 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
-  border-top: 0.1875rem solid var(--primaty-dark);
+  border-top: 0.1875rem solid var(--primary-grey);
 }
 
 .navbar-brand {
@@ -41,14 +51,426 @@ nav ul li {
   height: 8.25rem !important;
 }
 
-nav {
-  background-color: var(--primary-grey) !important;
-}
-
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
   border-top: 0.1875rem solid var(--primary-orange); 
 }
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
+}
+
+
+/* ########################### HEADER ################################## */
+.header-wraper{
+  position: relative;
+  background: url(assets/background.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed" sans-serif;
+  z-index: 1;
+}
+
+.main-info h1{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* ########################### TYPED TEXT ################################## */
+.type-text{
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+/* ########################### OFFER BUTTON ################################## */
+.btn-main-offer{
+  border: 0.4rem solid var(--primary-red);
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin-top: 2rem;
+  animation: fadeIn 2s;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+}
+
+#tsparticles{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+/* ########################## ABOUT ME ###########################3 */
+.aboutme_info{
+  background-color: var(--secondary-grey);
+  z-index: 2;
+  font-family: "Roboto Condensed" sans-serif;
+}
+
+.profile_pic{
+  height: 18rem;
+  width: 18rem;
+  border-radius: 50%;
+}
+
+.aboutme_info h3{
+  text-transform: uppercase;
+  color: var(--primary-orange);
+}
+
+.service_header{
+  text-transform: uppercase;
+  color: var(--primary-orange);
+  text-align: center;
+
+}
+/* ########################### CARDS ########################################### */
+.services .card{
+  height: 20rem;
+  border-bottom: 0.4rem solid var(--primary-orange);
+}
+
+.services .card:hover{
+  color: var(--primary-orange);
+  cursor: pointer;
+  border: none;
+  border-bottom: 0.4rem solid var(--primary-dark);
+}
+
+.card-title{
+  text-transform: capitalize;
+  text-align: center;
+}
+.card-img-top {
+  justify-self: center;
+  margin-top: 2rem;
+  height: 5rem;
+  width: 5rem;
+  fill: var(--primary-white);
+}
+
+.card-img-top:hover{
+  fill: var(--primary-dark);
+}
+
+.svgcircle{
+  fill: var(--primary-orange);
+  stroke: var(--primary-orange);
+  stroke-width: 100;
+}
+
+/* ############################ CAROUSEL ################################## */
+.portfolio{
+  background-color: var(--primary-dark);
+}
+
+.portfolio_header{
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--primary-orange);
+  margin-top: 2rem;
+}
+
+.carousel-dark:hover{
+  color: var(--primary-orange);
+}
+
+.carousel_data{
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: var(--primary-dark);
+  background-color: var(--primary-orange);
+  font-size: 1.25rem;
+}
+
+.carousel_data:hover{
+  color: var(--primary-orange);
+  background-color: var(--primary-dark);
+}
+/* ############################################## CONTACT ################################33 */
+.contact{
+  justify-self: center;
+  background-color: var(--secondary-grey);
+}
+
+.contact form{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.contact input{
+  width: 100%;
+  height: 3rem;
+  padding: 0.7rem;
+  outline: none;
+  border-radius: 2rem;
+  border: 0.1rem solid var(--primary-dark);
+}
+
+.contact textarea{
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  padding: 3rem;
+  outline: none;
+  border-radius: 2rem;
+  border: 0.1rem solid var(--primary-dark);
+  margin-bottom: 1rem;
+
+}
+
+.contact input:focus{
+  border: 0.3rem solid var(--primary-dark);
+}
+
+.contact textarea:focus{
+  border: 0.3rem solid var(--primary-dark);
+}
+
+.contact label{
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.contanct_header{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family:"Roboto Condensed" sans-serif;
+  font-weight: bold;
+}
+
+.submitbtn{
+  background-color: var(--primary-orange);
+}
+
+.submitbtn:hover{
+  background-color: var(--primary-dark);
+  color: var(--primary-orange);
+}
+
+.contact_header_two, .contact_header_three{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family:"Roboto Condensed" sans-serif;
+  font-weight: bold;
+}
+
+.techimages1, .techimages2, .techimages3, .techimages4, .techimages5, .techimages6, .socialmedia{
+  width: 80%;
+  height: 80%;
+}
+
+.socialmedia:hover{
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.circleup{
+  height: 5rem;
+  width: 5rem;
+}
+
+.homeref{
+  color: var(--primary-grey);
+  text-align: center;
+}
+
+
+
+/* ############################################################################################ */
+@media (max-width: 768px){
+  .circleup{
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 61rem;
+    margin-left: -2rem;
+  }
+
+  .contact_header_three{
+    position: absolute;
+    top: 51rem;
+    margin-left: -15rem;
+  }
+  .socialmedia{
+    position: absolute;
+    margin-top: 52rem;
+    margin-left: -10rem;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .techimages6{
+    position: absolute;
+    margin-top: 43rem;
+    margin-left: -7rem;
+    width: 6rem;
+    height: 5rem;
+  }
+
+  .techimages5{
+    position: absolute;
+    margin-top: 43rem;
+    margin-left: -10rem;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .techimages4{
+    position: absolute;
+    margin-top: 43rem;
+    margin-left: -13rem;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .techimages3{
+    position: absolute;
+    margin-top: 35rem;
+    margin-left: -7rem;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .techimages2{
+    position: absolute;
+    margin-top: 35rem;
+    margin-left: -10rem;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .techimages1{
+    position: absolute;
+    margin-top: 35rem;
+    margin-left: -13rem;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .contact textarea{
+    min-width: 25rem;  
+  }
+  .contact form{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .contact_header_two{
+    position: absolute;
+    margin-top: 32rem;
+    margin-left: -5rem;
+    font-size: 1.3rem;
+  }
+  .contanct_header{
+    position: absolute;
+    margin-bottom: 0.9rem;
+    font-size: 1.3rem;
+    justify-content: center;
+  }
+
+  .contact input{
+    width: 25rem;
+  }
+  .contact{
+    position: absolute;
+    margin-top: 25rem;
+    margin-left: 1.5rem;
+    height: 65rem;
+  }
+
+  .carousel_data{
+    font-size: 1rem;
+  }
+
+  .portfolio_header{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .portfolio{
+    width: 28rem;
+    position: absolute;
+    left: 1rem;
+    margin-left: 0;
+    margin-right: 20rem;
+  }
+
+  .card-body{
+    margin-top: 1rem;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .services .col-3{
+    height: 20rem;
+    width: 30rem;
+  }
+
+  .card-img-top {
+    justify-self: center;
+    margin-top: 1rem;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .main-info h1{
+    font-size: 1.5rem !important;
+  }
+
+  .type-text{
+    font-size: 1.7rem !important;
+  }
+
+  .navbar-brand{
+    width: 7rem;
+  }
+
+  .about_details{
+    margin-top: 14rem;
+    margin-left: -12rem;    
+  }
+
+  .aboutme_info h3{
+    margin-top: -2rem;
+    margin-left: -5rem; 
+    font-weight: bold;
+    font-size: 1.5rem !important;
+  }
+  .profile_pic{
+    height: 14rem;
+    width: 14rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+  }
 }
