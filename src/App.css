@@ -94,6 +94,7 @@ nav ul li {
 .type-text{
   font-size: 2rem;
   color: var(--primary-white);
+  font-weight: bold;
 }
 /* ########################### OFFER BUTTON ################################## */
 .btn-main-offer{
@@ -133,9 +134,14 @@ nav ul li {
   border-radius: 50%;
 }
 
+.aboutme_info .container{
+  margin-left: 1rem;
+}
+
 .aboutme_info h3{
   text-transform: uppercase;
   color: var(--primary-orange);
+  font-weight: bold;
 }
 
 .service_header{
@@ -305,78 +311,79 @@ nav ul li {
 
 
 /* ############################################################################################ */
-@media (max-width: 768px){
+@media (max-width: 768px){  
   .circleup{
     height: 3rem;
     width: 3rem;
     position: absolute;
-    top: 61rem;
+    top: 60rem;
     margin-left: -2rem;
   }
 
   .contact_header_three{
     position: absolute;
     top: 51rem;
-    margin-left: -15rem;
+    margin-left: -10rem;
+    font-weight: bold;
   }
   .socialmedia{
     position: absolute;
     margin-top: 52rem;
-    margin-left: -10rem;
-    width: 6rem;
-    height: 6rem;
+    margin-left: -8rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   .techimages6{
     position: absolute;
     margin-top: 43rem;
-    margin-left: -7rem;
-    width: 6rem;
-    height: 5rem;
+    margin-left: -5rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   .techimages5{
     position: absolute;
     margin-top: 43rem;
-    margin-left: -10rem;
-    width: 6rem;
-    height: 6rem;
+    margin-left: -8rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   .techimages4{
     position: absolute;
     margin-top: 43rem;
-    margin-left: -13rem;
-    width: 6rem;
-    height: 6rem;
+    margin-left: -10rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   .techimages3{
     position: absolute;
     margin-top: 35rem;
-    margin-left: -7rem;
-    width: 6rem;
-    height: 6rem;
+    margin-left: -5rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   .techimages2{
     position: absolute;
     margin-top: 35rem;
-    margin-left: -10rem;
-    width: 6rem;
-    height: 6rem;
+    margin-left: -8rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   .techimages1{
     position: absolute;
     margin-top: 35rem;
-    margin-left: -13rem;
-    width: 6rem;
-    height: 6rem;
+    margin-left: -10rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   .contact textarea{
-    min-width: 25rem;  
+    min-width: 18rem;  
   }
   .contact form{
     display: flex;
@@ -392,22 +399,25 @@ nav ul li {
     margin-top: 32rem;
     margin-left: -5rem;
     font-size: 1.3rem;
+    font-weight: bold;
   }
   .contanct_header{
     position: absolute;
     margin-bottom: 0.9rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     justify-content: center;
+    font-weight: bold;
   }
 
   .contact input{
-    width: 25rem;
+    width: 18rem;
   }
   .contact{
     position: absolute;
-    margin-top: 25rem;
-    margin-left: 1.5rem;
-    height: 65rem;
+    margin-top: 20rem;
+    margin-left: 2rem;
+    height: 91rem;
+    width: 19rem;
   }
 
   .carousel_data{
@@ -415,15 +425,19 @@ nav ul li {
   }
 
   .portfolio_header{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 1rem;
   }
   .portfolio{
-    width: 28rem;
+    width: 19rem;
     position: absolute;
-    left: 1rem;
+    left: 2rem;
     margin-left: 0;
     margin-right: 20rem;
+  }
+
+  .card{
+    width: 90vw;
   }
 
   .card-body{
@@ -435,6 +449,7 @@ nav ul li {
   .services .col-3{
     height: 20rem;
     width: 30rem;
+    margin-left: 1rem;
   }
 
   .card-img-top {
@@ -446,10 +461,12 @@ nav ul li {
 
   .main-info h1{
     font-size: 1.5rem !important;
+    font-weight: bold;
   }
 
   .type-text{
-    font-size: 1.7rem !important;
+    font-size: 1.2rem !important;
+    font-weight: bold;
   }
 
   .navbar-brand{
@@ -458,12 +475,13 @@ nav ul li {
 
   .about_details{
     margin-top: 14rem;
-    margin-left: -12rem;    
+    margin-left: -11rem;   
+    font-weight: bold; 
   }
 
   .aboutme_info h3{
     margin-top: -2rem;
-    margin-left: -5rem; 
+    margin-left: -4rem; 
     font-weight: bold;
     font-size: 1.5rem !important;
   }
@@ -471,6 +489,14 @@ nav ul li {
     height: 14rem;
     width: 14rem;
     border-radius: 50%;
-    margin-left: 2rem;
+    margin-left: 0.9rem;
+  }
+  .header-wraper{
+    background-position: center;
+    height: 40vh;
+    width: 100vw;
+  }
+  nav{
+    width: 100vw;
   }
 }

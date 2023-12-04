@@ -59,7 +59,7 @@ const Contact = () => {
                           <label>Name</label>
                           <input
                               required
-                              placeholder='Enter Your name'
+                              placeholder='Enter your name'
                               type='text'
                               name='user_name'
                               value={formData.user_name}
