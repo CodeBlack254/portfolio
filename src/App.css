@@ -148,8 +148,13 @@ nav ul li {
   text-transform: uppercase;
   color: var(--primary-orange);
   text-align: center;
-
 }
+
+.about_details{ 
+  font-weight: bold; 
+  font-family: "Roboto Condensed" sans-serif;
+}
+
 /* ########################### CARDS ########################################### */
 .services .card{
   height: 20rem;
