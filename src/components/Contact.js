@@ -140,7 +140,7 @@ const Contact = () => {
                   </div>
               </div>
               <div className='row'>
-                <a href='#home' className='homeref'>
+                <a href='#' className='homeref'>
                     <FontAwesomeIcon className='circleup' icon={faCircleArrowUp} bounce />
                 </a>
               </div>
