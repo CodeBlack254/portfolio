@@ -1,11 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from '../assets/logo.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
+    const [isFixed, setIsFixed] = useState(false);
+      
+    useEffect(() => {
+          const handleScroll = () => {
+            const scrollY = window.scrollY;
+            const scrollThreshold = 100;
+      
+            if (scrollY > scrollThreshold) {
+              setIsFixed(true);
+            } else {
+              setIsFixed(false);
+            }
+          };
+      
+          window.addEventListener('scroll', handleScroll);
+      
+          return () => {
+            window.removeEventListener('scroll', handleScroll);
+          };
+        }, []);
+
   return (
-      <nav className="navbar navbar-expand-lg navbar-light" id='home'>
+      <nav className={`navbar ${isFixed ? 'fixed' : ''} navbar-expand-lg navbar-light`} id='home'>
           <div className="container">
               <a className="navbar-brand" href="#"><img className='logo' src={logo} alt='logo...'></img> </a>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

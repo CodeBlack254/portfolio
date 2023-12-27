@@ -22,6 +22,12 @@ nav{
   z-index: 2;
 }
 
+nav.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .logo{
   width: 8rem;
   height: 8rem;
