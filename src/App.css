@@ -14,12 +14,14 @@
 
 body {
   font-family: "Roboto Condensed" sans-serif;
+  overflow-x: hidden;
 }
 
 /* ########################### NAVBAR ################################## */
 nav{
   background-color: var(--primary-grey) !important;
   z-index: 2;
+  /* height: 5rem; */
 }
 
 nav.fixed {
@@ -31,7 +33,7 @@ nav.fixed {
 .logo{
   width: 8rem;
   height: 8rem;
-  border-radius: 50%;
+  border-radius: 45%;
 }
 
 nav a.nav-link {
@@ -96,12 +98,36 @@ nav ul li {
   font-weight: bold;
 }
 
+.main-info h2{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 /* ########################### TYPED TEXT ################################## */
-.type-text{
+/* .type-text{
   font-size: 2rem;
   color: var(--primary-white);
   font-weight: bold;
+} */
+
+.blinking-cursor {
+  display: inline-block;
+  width: 10px;
+  margin-left: 2px;
+  animation: blink 0.7s infinite;
 }
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  50.01%, 100% {
+    opacity: 0;
+  }
+}
+
+
 /* ########################### OFFER BUTTON ################################## */
 .btn-main-offer{
   border: 0.4rem solid var(--primary-red);
@@ -199,7 +225,15 @@ nav ul li {
 /* ############################ CAROUSEL ################################## */
 .portfolio{
   background-color: var(--primary-dark);
+  width: 98vw;
+  /* height: 95vh; */
 }
+
+/* .carousel-item {
+  width: 80%; 
+  height: 75vh; 
+  margin: 0 auto;
+} */
 
 .portfolio_header{
   text-transform: uppercase;
@@ -323,6 +357,13 @@ nav ul li {
 
 /* ############################################################################################ */
 @media (max-width: 768px){  
+  .logo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 45%;
+    margin-top: 2rem;
+  }
+
   .circleup{
     height: 3rem;
     width: 3rem;
@@ -427,8 +468,8 @@ nav ul li {
     position: absolute;
     margin-top: 20rem;
     margin-left: 2rem;
-    height: 91rem;
-    width: 19rem;
+    height: 110vh;
+    width: 90vw;
   }
 
   .carousel_data{
@@ -440,7 +481,7 @@ nav ul li {
     margin-top: 1rem;
   }
   .portfolio{
-    width: 19rem;
+    width: 90vw;
     position: absolute;
     left: 2rem;
     margin-left: 0;
@@ -505,9 +546,11 @@ nav ul li {
   .header-wraper{
     background-position: center;
     height: 40vh;
-    width: 100vw;
+    width: 98vw;
+    margin: auto;
   }
   nav{
-    width: 100vw;
+    width: 98vw;
+    margin: auto;
   }
 }
