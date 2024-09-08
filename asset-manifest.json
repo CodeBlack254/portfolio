@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.e431df3c.css",
+    "main.js": "/portfolio/static/js/main.c8df2b3c.js",
+    "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
+    "static/media/background.png": "/portfolio/static/media/background.bb681685958e03c5bf97.png",
+    "static/media/pos.png": "/portfolio/static/media/pos.52a4a3660362ffbff54f.png",
+    "static/media/pos_portfolio.png": "/portfolio/static/media/pos_portfolio.e85c1f983e77e7c2d589.png",
+    "static/media/login.png": "/portfolio/static/media/login.a2823beb24674063f9bb.png",
+    "static/media/cashier.png": "/portfolio/static/media/cashier.012639c8d2709355fb1c.png",
+    "static/media/profile_pic_two.jpeg": "/portfolio/static/media/profile_pic_two.08f50e575385f0cdb268.jpeg",
+    "static/media/mtalii_logo.png": "/portfolio/static/media/mtalii_logo.6fd7d8ea299517477065.png",
+    "index.html": "/portfolio/index.html",
+    "static/media/flutter-svgrepo-com.svg": "/portfolio/static/media/flutter-svgrepo-com.644e6c5464051f00d093c3484227c0e6.svg",
+    "main.e431df3c.css.map": "/portfolio/static/css/main.e431df3c.css.map",
+    "main.c8df2b3c.js.map": "/portfolio/static/js/main.c8df2b3c.js.map",
+    "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e431df3c.css",
+    "static/js/main.c8df2b3c.js"
+  ]
+}
