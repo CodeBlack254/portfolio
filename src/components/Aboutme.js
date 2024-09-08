@@ -1,17 +1,16 @@
-import { faAlignCenter } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
 import Profile from '../assets/profile_pic_two.jpeg'
 
 const Aboutme = () => {
   return (
       <div className='aboutme_info' id="Aboutme">
-          <div class="container"> <br></br> <br></br>
-                <div class="row">
-                  <div class="col-2"> </div>
-                  <div class="col-4">
-                      <img className='profile_pic' src={Profile} alt='profile picture...'></img>
+          <div className="container"> <br></br> <br></br>
+                <div className="row">
+                  <div className="col-2"> </div>
+                  <div className="col-4">
+                      <img className='profile_pic' src={Profile} alt='profile...'></img>
                   </div>
-                  <div class="col-6">
+                  <div className="col-6">
                       <h3>About me</h3>
                       <p className='about_details'>I am a seasoned full-stack developer with expertise in 
                             crafting and overseeing REST APIs, proficient in an array of programming 
